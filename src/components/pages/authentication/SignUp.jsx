@@ -376,7 +376,7 @@ const SignUp = () => {
       });
 
       if (response.data.success) {
-        alert("Signup successful!");
+        alert("Signup successful!");``
         navigate("/");
       } else {
         setError(response.data.message || "Something went wrong. Please try again.");

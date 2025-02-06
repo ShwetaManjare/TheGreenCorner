@@ -1,8 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 
-import Navbar from '../../utils/navbar/Navbar';
-import Footer from '../../utils/navbar/footer/Footer';
+
 import { useNavigate } from 'react-router-dom';
 import { MdAlternateEmail } from 'react-icons/md';
 import { IoEyeOffOutline, IoEyeOutline } from 'react-icons/io5';
