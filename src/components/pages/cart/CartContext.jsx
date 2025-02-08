@@ -7,6 +7,7 @@ const initialState = {
   cart: [],
 };
 
+
 // Reducer function to manage cart actions
 const cartReducer = (state, action) => {
   switch (action.type) {
@@ -48,9 +49,11 @@ export const CartProvider = ({ children }) => {
   }, [state.cart]);
 
   return (
-    <CartContextState.Provider value={{ cart: state.cart, dispatch }}>
+   
+    <CartContextState.Provider value={{  cart: state.cart, dispatch }}>
       {children}
     </CartContextState.Provider>
+
   );
 };
 

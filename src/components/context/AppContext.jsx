@@ -18,7 +18,7 @@ const AppContext = ({children}) => {
      
     useEffect(()=>{
 
-        axios.get("http://localhost:4000/plants").then((resp)=>{setAllPlants(resp.data)
+        axios.get("http://localhost:3000/plants").then((resp)=>{setAllPlants(resp.data)
         }).catch((error)=>{
           console.log("Error fetching plants : ",error);
           
